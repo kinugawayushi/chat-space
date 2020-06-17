@@ -1,7 +1,7 @@
 # データベース設計
 
 ## groups_usersテーブル
-|Column|Type|Options|
+|Column|Type|Option|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
@@ -23,7 +23,7 @@
 
 
 ## groups テーブル
-|Column|Type|0ption|
+|Column|Type|Option|
 |------|----|------|
 |groupname|string|null: false|
 |user-id|integer|null: false, foreign_key: true|
@@ -38,7 +38,7 @@
 
 
 ## messagesテーブル
-|Column|Type|0ption|
+|Column|Type|Option|
 |------|----|------|
 |body|text|null: false|
 |image|string|
