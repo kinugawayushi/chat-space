@@ -1,0 +1,38 @@
+.chat-main__message-form{
+  background-color: #d2d2d2;
+  height: 90px;
+  padding: 20px 40px;
+  .chat-main__new-form{
+    display: flex;
+    .chat-main__form-box{
+      width: 100%;
+      position: relative;
+      .input-text-box{
+        height: 50px;
+        width: 100%;
+        padding: 0 40px 0 10px;
+        color: #434a54;
+        border-style: none;
+      }
+      .input-box-image{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 1.3rem;
+        cursor: pointer;
+        .box-image-file{
+          display: none;
+        }
+      }
+    }
+    .input-send-btn{
+      width: 100px;
+      height: 50px;
+      padding: 0 30px;
+      margin-left: 15px;
+      background-color: #38aef0;
+      color: white;
+      cursor: pointer;
+    } 
+  }
+}

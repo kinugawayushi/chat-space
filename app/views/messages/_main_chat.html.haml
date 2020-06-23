@@ -1,0 +1,51 @@
+.main-chat
+ .chat-main__group-info
+  .chat-main__left
+   %h2.chat-main__left-currentgroup
+    グループ
+   %ul.chat-main__left-member
+    Member:
+    %li.chat-main__left-list
+     きぬがわ
+  .chat-main__right
+   = link_to "#",class:"chat-main__edit-btn" do
+    Edit  
+ .chat-main__messages
+  .chat-main__message
+   .chat-main__info
+    %p.chat-main__talker
+     きぬがわ
+    %p.chat-main__data
+     2020/06/23(Tue) 16:31:25
+   %p.chat-main__text
+    hello
+   %img{alt: "猫",src:"3051218_l.jpg",height:"200",width:"150"}
+  .chat-main__message
+   .chat-main__info
+    %p.chat-main__talker
+     きぬがわ
+    %p.chat-main__data
+     2020/06/23(Tue) 16:31:25
+   %p.chat-main__text
+    hello
+   %img{alt: "猫",src:"3051218_l.jpg",height:"200",width:"150"}
+  .chat-main__message
+   .chat-main__info
+    %p.chat-main__talker
+     きぬがわ
+    %p.chat-main__data
+     2020/06/23(Tue) 16:31:25
+   %p.chat-main__text
+    hello
+   %img{alt: "猫",src:"3051218_l.jpg",height:"200",width:"150"}
+ .chat-main__message-form
+  .chat-main__new-form
+   .chat-main__form-box
+    %form
+     %input.input-text-box{:type => "text",:placeholder => "type a message"}/
+     %label{class:"input-box-image"}
+      = icon('fas','image')
+      %input.box-image-file{:type => "file"}
+   .chat-main__form-btn
+    %form
+     %input.input-send-btn{:type => "submit",:placeholder => "Send"}/

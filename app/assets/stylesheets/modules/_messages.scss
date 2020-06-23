@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+} 
+
+  .wrapper{
+    $mainHeight:100%;
+
+    height:100vh ;
+    display: flex;
+    .side-bar{
+     background-color:#2f3e51;
+     width: 300px;
+     height: $mainHeight;
+    }
+    .main-chat{
+     background-color:#ffffff;
+     width: calc(100vw - 300px);
+     height: $mainHeight;
+    }
+  }
+

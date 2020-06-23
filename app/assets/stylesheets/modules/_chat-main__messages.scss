@@ -1,0 +1,27 @@
+.chat-main__messages{
+  background-color: #fafafa;
+  height: calc(100vh - 100px - 90px);
+  padding: 35px 40px;
+  overflow: scroll;
+  .chat-main__message{
+    padding-bottom: 46px;
+    .chat-main__info{
+      display:flex;
+      margin-bottom: 12px;
+      .chat-main__talker{
+        color: #333333;
+        font-size: 16px;
+      }
+      .chat-main__data{
+        color: #999999;
+        font-size: 12px;
+        margin-left: 10px;
+      }
+    }
+    .chat-main__text{
+      color: #434A54;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }  
+  }     
+}
