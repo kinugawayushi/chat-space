@@ -16,16 +16,16 @@
     display: flex;
     justify-content: space-between;
     line-height: 20px;
-    .top-items__name{
+    &__name{
       color:$mainColor;
     }
-    .top-items__icon{
+    &__icon{
      width: 60px;
-      .top-items__btn{
+      &__btn{
        color: $mainColor;
        float: right;
        }
-      .top-items__edit{
+      &__edit{
        margin-right:5px ;
       }
     }

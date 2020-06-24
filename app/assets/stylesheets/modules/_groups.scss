@@ -4,16 +4,16 @@
   height:calc(100vh - 100px);
  .group{
   margin-bottom: 40px;;
-  .group__group-name{
+  &__group-name{
    margin-bottom: 5px;
-    .group-icon{
+    &__icon{
      color:$mainColor-group;
      text-decoration: none;
      font-size: 15px;
     }
   }
   
-  .group__group-message{
+  &__group-message{
     color: $mainColor-group;
     font-size: 11px;
   }
