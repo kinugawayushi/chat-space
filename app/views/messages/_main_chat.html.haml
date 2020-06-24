@@ -1,46 +1,47 @@
 .main-chat
  .chat-main__group-info
   .chat-main__left
-   %h2.chat-main__left-currentgroup
+   %h2.chat-main-left__currentgroup
     グループ
-   %ul.chat-main__left-member
+   %ul.chat-main-left__member
     Member:
     %li.chat-main__left-list
      きぬがわ
   .chat-main__right
    = link_to "#",class:"chat-main__edit-btn" do
     Edit  
- .chat-main__messages
+ .chat-main-messages
   .chat-main__message
-   .chat-main__info
-    %p.chat-main__talker
+   .chat-main-message__info
+    %p.chat-main-message__talker
      きぬがわ
-    %p.chat-main__data
+    %p.chat-main-message__data
      2020/06/23(Tue) 16:31:25
-   %p.chat-main__text
+   %p.chat-main-message__text
     hello
    %img{alt: "猫",src:"3051218_l.jpg",height:"200",width:"150"}
   .chat-main__message
-   .chat-main__info
-    %p.chat-main__talker
+   .chat-main-message__info
+    %p.chat-main-message__talker
      きぬがわ
-    %p.chat-main__data
+    %p.chat-main-message__data
      2020/06/23(Tue) 16:31:25
-   %p.chat-main__text
+   %p.chat-main-message__text
     hello
    %img{alt: "猫",src:"3051218_l.jpg",height:"200",width:"150"}
   .chat-main__message
-   .chat-main__info
-    %p.chat-main__talker
+   .chat-main-message__info
+    %p.chat-main-message__talker
      きぬがわ
-    %p.chat-main__data
+    %p.chat-main-message__data
      2020/06/23(Tue) 16:31:25
-   %p.chat-main__text
+   %p.chat-main-message__text
     hello
    %img{alt: "猫",src:"3051218_l.jpg",height:"200",width:"150"}
- .chat-main__message-form
-  .chat-main__new-form
-   .chat-main__form-box
+  
+ .chat-main-message-form
+  .chat-main-message-form__new
+   .chat-main-message-form__box
     %form
      %input.input-text-box{:type => "text",:placeholder => "type a message"}/
      %label{class:"input-box-image"}

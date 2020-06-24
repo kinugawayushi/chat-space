@@ -1,10 +1,10 @@
-.chat-main__message-form{
+.chat-main-message-form{
   background-color: #d2d2d2;
   height: 90px;
   padding: 20px 40px;
-  .chat-main__new-form{
+  &__new{
     display: flex;
-    .chat-main__form-box{
+    .chat-main-message-form__box{
       width: 100%;
       position: relative;
       .input-text-box{

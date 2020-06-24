@@ -5,14 +5,14 @@
   padding:0 40px;
   display: flex;
   justify-content: space-between;
-  .chat-main__left{
+  .chat-main-left{
     font-size: 20px;
-    .chat-main__left-currentgroup{
+    &__currentgroup{
       margin-top: 35px;
       margin-bottom: 15px;
       color: #333333;
     }
-    .chat-main__left-member{
+    &__member{
       font-size: 12px;
       color: #999999;
       .chat-main__left-list{

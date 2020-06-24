@@ -21,11 +21,11 @@
     }
     &__icon{
      width: 60px;
-      &__btn{
+      .top-items__btn{
        color: $mainColor;
        float: right;
        }
-      &__edit{
+      .top-items__edit{
        margin-right:5px ;
       }
     }
