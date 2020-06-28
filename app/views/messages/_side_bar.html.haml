@@ -1,14 +1,14 @@
 .side-bar
   .side-bar__user-name
     .top-items
-      .top-items__name
-        きぬ川
+      %h3.top-items__name
+        = current_user.name
       .top-items__icon
-        = link_to "#", class:"top-items__btn" do
-          = icon('fas','cog')
+        = link_to  do
+          = icon('fas','cog',class:'top-items__btn')
          
-        = link_to "#", class:"top-items__btn    top-items__edit" do
-          = icon('far','edit')
+        = link_to edit_user_path(current_user) do
+          = icon('far','edit', class:"top-items__btn    top-items__edit")
   .groups
     .group
       .group__name
