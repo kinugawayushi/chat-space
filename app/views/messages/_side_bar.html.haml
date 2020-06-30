@@ -4,30 +4,17 @@
       %h3.top-items__name
         = current_user.name
       .top-items__icon
-        = link_to  do
+        = link_to edit_user_path(current_user.id) do
           = icon('fas','cog',class:'top-items__btn')
          
-        = link_to edit_user_path(current_user) do
+        = link_to new_group_path()  do
           = icon('far','edit', class:"top-items__btn    top-items__edit")
   .groups
-    .group
-      .group__name
-        = link_to "#", class:"group__icon" do
-          グループ
-      .group__message
-        まだメッセージはありません。    
-    
-    .group
-      .group__name
-        = link_to "#", class:"group__icon" do
-          グループ
-      .group__message
-        まだメッセージはありません。    
-    
-    .group
-      .group__name
-        = link_to "#", class:"group__icon" do
-          グループ
-      .group__message
-        まだメッセージはありません。    
+    - current_user.groups.each do |group|
+      .group
+        .group__name
+          = link_to "#", class:"group__icon" do
+            = group.name
+        .group__message
+          まだメッセージはありません。        
     
