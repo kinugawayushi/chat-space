@@ -3,36 +3,40 @@
   height: 90px;
   padding: 20px 40px;
   &__new{
-    display: flex;
-    .chat-main-message-form__box{
-      width: 100%;
-      position: relative;
-      .input-text-box{
-        height: 50px;
-        width: 100%;
-        padding: 0 40px 0 10px;
-        color: #434a54;
-        border-style: none;
-      }
-      .input-box-image{
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        font-size: 1.3rem;
-        cursor: pointer;
-        .box-image-file{
-          display: none;
+    .form{
+      .new_message{
+        display: flex;
+        .chat-main-message-form__box{
+          width: 100%;
+          position: relative;
+          .input-text-box{
+            height: 50px;
+            width: 100%;
+            padding: 0 40px 0 10px;
+            color: #434a54;
+            border-style: none;
+          }
+          .input-box-image{
+            position: absolute;
+            top: 10px;
+            right: 30px;
+            font-size: 1.3rem;
+            cursor: pointer;
+            .box-image-file{
+              display: none;
+            }
+          }
         }
+        .input-send-btn{
+          width: 100px;
+          height: 50px;
+          padding: 0 30px;
+          margin-left: 15px;
+          background-color: #38aef0;
+          color: white;
+          cursor: pointer;
+        } 
       }
     }
-    .input-send-btn{
-      width: 100px;
-      height: 50px;
-      padding: 0 30px;
-      margin-left: 15px;
-      background-color: #38aef0;
-      color: white;
-      cursor: pointer;
-    } 
   }
-}
+} 
