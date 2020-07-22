@@ -48,18 +48,18 @@ $(function(){
      contentType: false
    })
    .done(function(data){
-     console.log(data)
      var html = buildHTML(data);
-     console.log(html)
      $('.chat-main-messages').append(html);
      $('.chat-main-messages').animate({ scrollTop: $('.chat-main-messages')[0].scrollHeight });
      $('form')[0].reset();
-     $('.input-send-btn').prop('disabled', false);
    })
    .fail(function(){
      alert("メッセージ送信に失敗しました");
-     $('.input-send-btn').prop('disabled', false);
+   })
+   .always(function(){
+    $('.input-send-btn').prop('disabled', false);
    });
+   
  })
 });
 
