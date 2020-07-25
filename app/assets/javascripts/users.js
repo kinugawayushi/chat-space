@@ -69,4 +69,3 @@ $(function(){
    $(this).parent().remove();
   });
 });
-
