@@ -1,5 +1,4 @@
-$(function(){
-  
+$(function(){  
   function buildHTML(message){
     if(message.image){
       var html =
@@ -17,7 +16,7 @@ $(function(){
       <img class="lower-message__image" src = ${message.image}>
       </div>
       </div>`
-     return html;
+      return html;
     } else {
       var html =
       `<div class="chat-main__message" data-message-id=${message.id}>
@@ -33,7 +32,7 @@ $(function(){
       </p>
       </div>
       </div>`
-     return html;
+      return html;
     };
   }
   $('#new_message').on('submit', function(e){
